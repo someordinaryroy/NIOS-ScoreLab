@@ -1,10 +1,12 @@
 # NIOS-ScoreLab
 
-**An offline marksheet and passing-marks calculator for NIOS Class 10 and Class 12 students.**
+**A marksheet and passing-marks calculator for NIOS Class 10 and Class 12 students.**
+
+[**Launch NIOS ScoreLab →**](https://someordinaryroy.github.io/NIOS-ScoreLab/)
 
 NIOS ScoreLab is a lightweight, browser-based application designed to help National Institute of Open Schooling (NIOS) Stream 1 learners estimate their examination results, understand subject-wise passing requirements and plan their preparation targets.
 
-Built with plain HTML, CSS and JavaScript, ScoreLab runs entirely on your device without a server, internet connection or external dependencies.
+Built with plain HTML, CSS and JavaScript, ScoreLab is available on GitHub Pages and as a standalone HTML file. Calculations run locally in the browser without a backend or external dependencies.
 
 ## Features
 
@@ -17,17 +19,33 @@ Built with plain HTML, CSS and JavaScript, ScoreLab runs entirely on your device
 - **Certification check** — estimates whether a qualifying five-subject marks combination exists, including language requirements.
 - **Offline storage** — separate saved workspaces for Class 10 and Class 12, where browser storage is supported.
 - **Export options** — download results as CSV or print/save as PDF using your browser.
-- **Responsive interface** — clean layouts for desktop and mobile, with light and dark modes.
+- **Responsive interface** — clean layouts for desktop and mobile, with light and dark modes, subtle transitions and reduced-motion support.
 
 ## Getting started
 
-1. Download `index.html` from this repository.
-2. Open the file in a modern web browser, such as Firefox, Chrome or Edge.
-3. Select **Class 10** or **Class 12** from the header.
-4. Choose your subjects and enter your expected or actual marks.
-5. Review the estimated marksheet, passing status and required theory marks.
+### Use the website
 
-No installation, package manager, build process or local server is required.
+Visit [someordinaryroy.github.io/NIOS-ScoreLab/](https://someordinaryroy.github.io/NIOS-ScoreLab/).
+
+1. Select **Class 10** or **Class 12** from the header.
+2. Select **Add subject** and choose your subject from the list. Repeat for up to seven subjects.
+3. Enter your expected or actual theory, TMA and practical marks.
+4. Review the estimated marksheet, passing status and theory targets.
+5. Export a CSV or use **Print / PDF** to keep a copy of your results.
+
+### Use offline
+
+Download [`index.html`](https://github.com/someordinaryroy/NIOS-ScoreLab/blob/main/index.html) (use the download/raw file option on GitHub), then open the saved file in Firefox, Chrome, Edge or another modern browser. No installation or local server is needed. The hosted page requires internet for its initial load; the downloaded HTML works without internet. Local saves from a hosted page and a downloaded file may be separate.
+
+### Repository structure
+
+```text
+NIOS-ScoreLab/
+├── index.html   # Application: HTML, CSS and JavaScript
+└── README.md    # Project documentation
+```
+
+To host a copy, put `index.html` in the publishing source of your GitHub Pages repository. For branch-based deployment, use **Settings → Pages → Deploy from a branch**, then select your branch and `/(root)` if the files are in its root. See the [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
 ### TMA input formats
 
@@ -85,7 +103,7 @@ There are no external libraries, CDNs, accounts or backend services required for
 
 ## Privacy
 
-Marks and preferences are processed locally in the browser. The application does not send them to a remote server. Local storage may be unavailable or cleared depending on browser settings; export your results if you want to keep a separate copy.
+Marks and preferences are processed locally in the browser. The application does not send them to a remote server. GitHub Pages serves the website and may handle ordinary hosting request metadata according to its own policies. The calculator does not use analytics, accounts or tracking scripts. Local storage may be unavailable or cleared depending on browser settings; export your results if you want to keep a separate copy.
 
 ## Official references
 
@@ -112,7 +130,7 @@ Always refer to the official NIOS marksheet and applicable examination rules for
 
 ## Feedback and contributions
 
-Suggestions for improvements, accessibility fixes, bug reports and corrections to subject allocations are welcome through GitHub Issues or pull requests. When reporting a calculation issue, include the class, subject code, entered marks, expected outcome and an official reference where available. Avoid sharing personal details or enrollment numbers.
+Suggestions for improvements, accessibility fixes, bug reports and corrections to subject allocations are welcome through [GitHub Issues](https://github.com/someordinaryroy/NIOS-ScoreLab/issues) or pull requests. When reporting a calculation issue, include the class, subject code, entered marks, expected outcome and an official reference where available. Avoid sharing personal details or enrollment numbers.
 
 ---
 
