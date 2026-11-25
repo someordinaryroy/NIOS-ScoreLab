@@ -21,7 +21,7 @@ Built with plain HTML, CSS and JavaScript, ScoreLab runs entirely on your device
 
 ## Getting started
 
-1. Download `NIOS_ScoreLab_Offline_v2.html` from this repository.
+1. Download `index.html` from this repository.
 2. Open the file in a modern web browser, such as Firefox, Chrome or Edge.
 3. Select **Class 10** or **Class 12** from the header.
 4. Choose your subjects and enter your expected or actual marks.
